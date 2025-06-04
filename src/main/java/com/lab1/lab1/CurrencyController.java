@@ -21,7 +21,7 @@ public class CurrencyController {
             @RequestParam double amount // Вхідний параметр "сума для конвертації"
     ) {
 
-        double rate = 0; // Змінна для зберігання курсу обміну
+        double rate; // Змінна для зберігання курсу обміну
 
         // Визначаємо курс обміну залежно від валют
         if (Objects.equals(from, "UAH") && Objects.equals(to, "USD")) {
